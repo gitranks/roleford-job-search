@@ -1,5 +1,5 @@
 ---
-description: Today's job search with Roleford: status, new matches worth a look, and follow-ups due
+description: "Today's job search with Roleford: status, new matches worth a look, and follow-ups due"
 argument-hint: "[skills, place or work mode]"
 ---
 

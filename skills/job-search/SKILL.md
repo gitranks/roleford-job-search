@@ -30,14 +30,16 @@ Never ask them to paste anything from that page.
    `place`, `workMode`, `level`, `payFloor`, `postedWithinDays`). A row is a preview: our reading of the job, without
    the company. Show the best few with why they fit.
 3. **Look closer.** `preview_job` on the ones worth a look: why it fits, what's missing, a short description and the
-   price. Record what the user likes or rejects with `rate_job`: it improves the next list.
+   price. Opening 100 different jobs a day is the limit, on the website and in agents together. Record what the user likes or rejects with `rate_job`: it improves the next list.
 4. **Unlock.** `unlock_job` costs 10 of the user's tokens and shows everything: the company, the posting, where to
    apply and who to write to. Say so before the first unlock in a conversation; after that, unlock only as the user
    asked, within the daily limit they set (`get_status` says how many are left today).
 5. **Apply.** An unlocked job is the user's: they apply on the company's site, write to the people listed, or neither.
    If they want Roleford's tailored CV and email draft, call `prepare_application` (free) and read it with
-   `get_application`, which also gives a link to the CV as a PDF. Adjust it with `edit_part`, or `rewrite_part` with an
-   instruction (3 rewrites a job included, then 1 token each). If you write their CV yourself, don't prepare one.
+   `get_application`, which also gives a link to the CV as a PDF. Parts are written in the background: while one is
+   queued or pending, read the application again every few seconds; `retry_part` writes a part that failed. Adjust the
+   CV and the email draft with `edit_part`, or `rewrite_part` with an instruction (3 rewrites a job included, then 1
+   token each, at most 20 paid rewrites a day). If you write their CV yourself, don't prepare one.
 6. **Track.** Tell Roleford what happened with `track_application`: applied, an interview, a follow-up sent, closed or
    hired. `list_applications` shows where each one stands and which follow-ups are due.
 7. **What they're looking for.** `get_profile` reads the profile; `set_looking_for` changes roles, places, work modes,
@@ -51,5 +53,5 @@ Never ask them to paste anything from that page.
 - Writing to the people listed: one short email, say where the address was found, never write again to someone who said
   no. Don't keep their details once the application is closed.
 - Quests, the streak and achievements only count on roleford.com.
-- When tokens run out, the user can wait for the next daily tokens, take a plan or buy a pack on roleford.com, or finish
-  quests there.
+- When tokens run out, the user can wait for their next tokens (daily on the free plan, weekly on a paid one), take a
+  plan or buy a pack on roleford.com, or finish quests there.

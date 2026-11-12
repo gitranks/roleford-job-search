@@ -94,8 +94,9 @@ Any client with remote MCP servers and sign-in (OAuth) works: add a streamable H
 | --- | --- |
 | `.claude-plugin/` | Claude Code plugin and marketplace |
 | `gemini-extension.json` | Gemini CLI extension |
-| `plugin.json`, `mcp.json`, `.agents/plugins/marketplace.json` | Agent Plugins format (Codex, Cursor, Copilot) |
-| `.antigravity-plugin/`, `mcp_config.json` | Antigravity |
+| `plugin.json`, `mcp.json` | Agent Plugins format |
+| `.agents/plugins/marketplace.json` | Codex plugin marketplace |
+| `.antigravity-plugin/`, `mcp_config.json` | Antigravity (its sign-in for remote servers not tested yet) |
 | `.devin-plugin/` | Devin |
 
 ## Use it
@@ -124,8 +125,10 @@ With every tool call, the access token, and:
 - the filters you ask `find_jobs` for, and the jobs you open, rate (with your reasons and note) or unlock;
 - changes to what you're looking for: roles, places, work modes, levels, contracts, companies to never show and the
   expected salary;
-- for an application: your edits to the tailored CV and email draft, the instructions for a rewrite, and what happened:
-  applied (and who you emailed), the stage, interviews with their time and notes, and follow-ups.
+- for an application: your edits to the tailored CV and email draft (with the addresses it goes to), the part to
+  rewrite or write again and the instructions for a rewrite, and what happened: applied (and who you emailed), the
+  stage with its date and, when closed, the reason, interviews with their time and notes, and follow-ups;
+- with an unlock or a rewrite, a key your agent makes up, so a retry never charges twice.
 
 Your agent, and the AI company behind it, receive what the tools answer: your profile, the jobs matched to you, the jobs
 you unlock with the people at those companies we suggest writing to, and your applications. Roleford never sees your

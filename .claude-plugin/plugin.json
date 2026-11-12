@@ -2,7 +2,7 @@
   "name": "roleford-job-search",
   "displayName": "Roleford job search",
   "version": "0.1.0",
-  "description": "Run your tech job search from your AI agent: Roleford's matches, unlocks, applications and follow-ups.",
+  "description": "Your tech job search in your AI agent: Roleford finds the jobs that fit you, you choose which to apply to.",
   "author": {
     "name": "Roleford",
     "url": "https://roleford.com"
