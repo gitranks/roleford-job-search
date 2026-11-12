@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "roleford": {
+      "type": "http",
+      "url": "https://mcp.roleford.com/mcp"
+    }
+  }
+}

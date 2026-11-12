@@ -1,0 +1,28 @@
+{
+  "name": "roleford-job-search",
+  "displayName": "Roleford job search",
+  "version": "0.1.0",
+  "description": "Run your tech job search from your AI agent: Roleford's matches, unlocks, applications and follow-ups.",
+  "shortDescription": "Your tech job search, from your agent",
+  "author": {
+    "name": "Roleford",
+    "url": "https://roleford.com"
+  },
+  "homepage": "https://roleford.com/mcp",
+  "repository": "https://github.com/gitranks/roleford-job-search",
+  "license": "MIT",
+  "keywords": [
+    "jobs",
+    "job-search",
+    "career",
+    "tech-jobs",
+    "mcp"
+  ],
+  "logo": "assets/icon.png",
+  "mcpServers": {
+    "roleford": {
+      "url": "https://mcp.roleford.com/mcp",
+      "transport": "http"
+    }
+  }
+}

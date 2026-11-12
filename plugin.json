@@ -1,0 +1,40 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "roleford-job-search",
+  "version": "0.1.0",
+  "description": "Run your tech job search from your AI agent: Roleford's matches, unlocks, applications and follow-ups.",
+  "author": {
+    "name": "Roleford",
+    "url": "https://roleford.com"
+  },
+  "homepage": "https://roleford.com/mcp",
+  "repository": "https://github.com/gitranks/roleford-job-search",
+  "license": "MIT",
+  "keywords": [
+    "jobs",
+    "job-search",
+    "career",
+    "tech-jobs",
+    "mcp"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Roleford job search",
+        "shortDescription": "Your tech job search, from your agent",
+        "longDescription": "Your agent finds the jobs Roleford matched to you, unlocks the ones you pick with your Roleford tokens, prepares your application if you want, and keeps your applications and follow-ups up to date.",
+        "developerName": "Roleford",
+        "category": "Productivity",
+        "websiteURL": "https://roleford.com/mcp",
+        "privacyPolicyURL": "https://roleford.com/privacy",
+        "termsOfServiceURL": "https://roleford.com/terms",
+        "defaultPrompt": [
+          "Run my job search for today with Roleford",
+          "Show my Roleford applications and which follow-ups are due"
+        ],
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}

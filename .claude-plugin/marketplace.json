@@ -1,0 +1,15 @@
+{
+  "name": "roleford",
+  "description": "Roleford job search for Claude Code.",
+  "owner": {
+    "name": "Roleford",
+    "url": "https://roleford.com"
+  },
+  "plugins": [
+    {
+      "name": "roleford-job-search",
+      "source": "./",
+      "description": "Run your tech job search from your AI agent: Roleford's matches, unlocks, applications and follow-ups."
+    }
+  ]
+}

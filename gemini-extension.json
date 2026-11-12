@@ -1,0 +1,10 @@
+{
+  "name": "roleford-job-search",
+  "version": "0.1.0",
+  "description": "Run your tech job search from your AI agent: Roleford's matches, unlocks, applications and follow-ups.",
+  "mcpServers": {
+    "roleford": {
+      "httpUrl": "https://mcp.roleford.com/mcp"
+    }
+  }
+}
