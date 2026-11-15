@@ -53,5 +53,5 @@ Never ask them to paste anything from that page.
 - Writing to the people listed: one short email, say where the address was found, never write again to someone who said
   no. Don't keep their details once the application is closed.
 - Quests, the streak and achievements only count on roleford.com.
-- When tokens run out, the user can wait for their next tokens (daily on the free plan, weekly on a paid one), take a
-  plan or buy a pack on roleford.com, or finish quests there.
+- When tokens run out, tell the user the ways the refusal's `ways` lists (their next tokens, quests on roleford.com,
+  and a plan or a pack only when roleford.com sells them); never offer a way it doesn't list.
