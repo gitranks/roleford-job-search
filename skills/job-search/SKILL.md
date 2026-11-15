@@ -53,5 +53,8 @@ Never ask them to paste anything from that page.
 - Writing to the people listed: one short email, say where the address was found, never write again to someone who said
   no. Don't keep their details once the application is closed.
 - Quests, the streak and achievements only count on roleford.com.
-- When tokens run out, tell the user the ways the refusal's `ways` lists (their next tokens, quests on roleford.com,
-  and a plan or a pack only when roleford.com sells them); never offer a way it doesn't list.
+- When `unlock_job` or a rewrite answers `INSUFFICIENT_TOKENS`, pass on each entry of its `ways` as it is; never offer
+  a way it doesn't list.
+- `DAILY_UNLOCK_CAP`: the user's daily unlocks for agents are used up; give `resetsAt` and the `change` link, where they
+  can raise the limit. `DAILY_CEILING`: today's share of their tokens is spent until `resetsAt`; pass on its `ways` if
+  it has any.
