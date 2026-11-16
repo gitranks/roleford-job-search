@@ -1,7 +1,7 @@
 {
   "name": "roleford-job-search",
   "displayName": "Roleford job search",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Your tech job search in your AI agent: Roleford finds the jobs that fit you, you choose which to apply to.",
   "shortDescription": "Your tech job search, from your agent",
   "author": {

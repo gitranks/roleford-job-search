@@ -28,7 +28,10 @@ Never ask them to paste anything from that page.
    to start matching again) and stop.
 2. **Find.** Call `find_jobs`, with `newOnly` for today's new matches and the user's wishes as filters (`skills`,
    `place`, `workMode`, `level`, `payFloor`, `postedWithinDays`). A row is a preview: our reading of the job, without
-   the company. Show the best few with why they fit.
+   the company. Show the best few with why they fit. Both `get_status` and `find_jobs` carry `matchingOn`: the
+   skills, where the user lives and the level the matches are based on, each with where it came from. When `missing`
+   is there, tell the user what the list is showing (`listShows`, e.g. jobs at every level) and that they can set it
+   at the `setOn` link; don't guess it for them.
 3. **Look closer.** `preview_job` on the ones worth a look: why it fits, what's missing, a short description and the
    price. Opening 100 different jobs a day is the limit, on the website and in agents together. Record what the user likes or rejects with `rate_job`: it improves the next list.
 4. **Unlock.** `unlock_job` costs 10 of the user's tokens and shows everything: the company, the posting, where to
