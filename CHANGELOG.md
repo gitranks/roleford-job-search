@@ -4,7 +4,7 @@
 
 ## 0.1.2 (2026-11-16)
 
-- The `job-search` skill passes on what the matches are based on (`matchingOn`) and, when skills, where the user
+- The `job-search` skill passes on what the matches are based on (`matchingOn`) and, when where the user
   lives or their level is missing, what the list shows and where to set it.
 
 ## 0.1.1 (2026-11-15)
