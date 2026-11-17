@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 0.1.3 (2026-11-17)
+
+- Listing text only: a 29-character short description ("Job search from your AI agent") where the OpenAI and
+  Devin manifests ask for one, a new long description, and the keywords `resume`, `software-engineer-jobs` and
+  `remote-jobs`. Nothing the plugin does changes.
+
 ## 0.1.2 (2026-11-16)
 
 - The `job-search` skill passes on what the matches are based on (`matchingOn`) and, when where the user
