@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+## 0.1.4 (2026-11-17)
+
+- The `job-search` skill tells the user before unlocking a job whose preview carries `employerNote` (the unlock
+  may not name the employer), and says `edit_part` is free while `rewrite_part` may cost a token.
+
 ## 0.1.3 (2026-11-17)
 
 - Listing text only: a 29-character short description ("Job search from your AI agent") where the OpenAI and
