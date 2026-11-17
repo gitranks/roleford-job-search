@@ -1,7 +1,7 @@
 {
   "name": "roleford-job-search",
   "displayName": "Roleford job search",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Your tech job search in your AI agent: Roleford finds the jobs that fit you, you choose which to apply to.",
   "author": {
     "name": "Roleford",
@@ -15,7 +15,10 @@
     "job-search",
     "career",
     "tech-jobs",
-    "mcp"
+    "mcp",
+    "resume",
+    "software-engineer-jobs",
+    "remote-jobs"
   ],
   "icon": "./assets/icon.png",
   "documentationUrl": "https://github.com/gitranks/roleford-job-search#readme",
