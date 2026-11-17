@@ -5,7 +5,8 @@
 ## 0.1.4 (2026-11-17)
 
 - The `job-search` skill tells the user before unlocking a job whose preview carries `employerNote` (the unlock
-  may not name the employer), and says `edit_part` is free while `rewrite_part` may cost a token.
+  may not name the employer), says `edit_part` is free while `rewrite_part` may cost a token, and reads the
+  application again every 5 seconds while a part is queued or pending.
 
 ## 0.1.3 (2026-11-17)
 

@@ -28,7 +28,8 @@ Never ask them to paste anything from that page.
    to start matching again) and stop.
 2. **Find.** Call `find_jobs`, with `newOnly` for today's new matches and the user's wishes as filters (`skills`,
    `place`, `workMode`, `level`, `payFloor`, `postedWithinDays`). A row is a preview: our reading of the job, without
-   the company. Show the best few with why they fit. Both `get_status` and `find_jobs` carry `matchingOn`: the
+   the company; its preview id is what `preview_job`, `rate_job` and `unlock_job` take. Show the best few with why
+   they fit. Both `get_status` and `find_jobs` carry `matchingOn`: the
    skills, where the user lives and the level the matches are based on, each with where it came from. When `missing`
    is there, tell the user what the list is showing (`listShows`, e.g. jobs at every level) and that they can set them
    at the `setOn` link; don't fill them in yourself.
@@ -44,7 +45,7 @@ Never ask them to paste anything from that page.
    `get_application`, which also gives a link to the CV as a PDF. Parts are written in the background: while one is
    queued or pending, read the application again every 5 seconds; `retry_part` writes a part that failed. To put
    words you already have into the CV or an email, `edit_part` is free; `rewrite_part` has Roleford write them from
-   an instruction (3 rewrites a job included, then 1 token each, at most 20 paid rewrites a day). If you write their
+   an instruction (3 rewrites a job included, then 1 token each, at most 20 paid rewrites a day through agents). If you write their
    CV yourself, don't prepare one.
 6. **Track.** Tell Roleford what happened with `track_application`: applied, an interview, a follow-up sent, closed or
    hired. `list_applications` shows where each one stands and which follow-ups are due.
