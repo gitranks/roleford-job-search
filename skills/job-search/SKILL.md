@@ -28,21 +28,25 @@ Never ask them to paste anything from that page.
    to start matching again) and stop.
 2. **Find.** Call `find_jobs`, with `newOnly` for today's new matches and the user's wishes as filters (`skills`,
    `place`, `workMode`, `level`, `payFloor`, `postedWithinDays`). A row is a preview: our reading of the job, without
-   the company. Show the best few with why they fit. Both `get_status` and `find_jobs` carry `matchingOn`: the
+   the company; its preview id is what `preview_job`, `rate_job` and `unlock_job` take. Show the best few with why
+   they fit. Both `get_status` and `find_jobs` carry `matchingOn`: the
    skills, where the user lives and the level the matches are based on, each with where it came from. When `missing`
    is there, tell the user what the list is showing (`listShows`, e.g. jobs at every level) and that they can set them
    at the `setOn` link; don't fill them in yourself.
 3. **Look closer.** `preview_job` on the ones worth a look: why it fits, what's missing, a short description and the
-   price. Opening 100 different jobs a day is the limit, on the website and in agents together. Record what the user likes or rejects with `rate_job`: it improves the next list.
+   price. When it answers `employerNote`, the unlock may not name the employer (an agency or a job board posted it, or
+   the posting names none): tell the user before unlocking. Opening 100 different jobs a day is the limit, on the
+   website and in agents together. Record what the user likes or rejects with `rate_job`: it improves the next list.
 4. **Unlock.** `unlock_job` costs 10 of the user's tokens and shows everything: the company, the posting, where to
    apply and who to write to. Say so before the first unlock in a conversation; after that, unlock only as the user
    asked, within the daily limit they set (`get_status` says how many are left today).
 5. **Apply.** An unlocked job is the user's: they apply on the company's site, write to the people listed, or neither.
    If they want Roleford's tailored CV and email draft, call `prepare_application` (free) and read it with
    `get_application`, which also gives a link to the CV as a PDF. Parts are written in the background: while one is
-   queued or pending, read the application again every few seconds; `retry_part` writes a part that failed. Adjust the
-   CV and the email draft with `edit_part`, or `rewrite_part` with an instruction (3 rewrites a job included, then 1
-   token each, at most 20 paid rewrites a day). If you write their CV yourself, don't prepare one.
+   queued or pending, read the application again every 5 seconds; `retry_part` writes a part that failed. To put
+   words you already have into the CV or an email, `edit_part` is free; `rewrite_part` has Roleford write them from
+   an instruction (3 rewrites a job included, then 1 token each, at most 20 paid rewrites a day through agents). If you write their
+   CV yourself, don't prepare one.
 6. **Track.** Tell Roleford what happened with `track_application`: applied, an interview, a follow-up sent, closed or
    hired. `list_applications` shows where each one stands and which follow-ups are due.
 7. **What they're looking for.** `get_profile` reads the profile; `set_looking_for` changes roles, places, work modes,
